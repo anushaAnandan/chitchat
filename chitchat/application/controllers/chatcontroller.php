@@ -44,7 +44,7 @@
 				elseif($this->input->post('Input')=='Register')
 				{
 					if($this->Chatmodel->register($this->input->post('username'),$this->input->post('password')))
-					{$this->load->view('chat/success');}
+					{$this->load->view('chat/regsuccess');}
 					else
 					{$this->load->view('chat/fail');}
 				}
